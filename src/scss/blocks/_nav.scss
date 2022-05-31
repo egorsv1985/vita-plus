@@ -5,6 +5,9 @@
 		@include flex ();
 		gap: 106px;
 		padding-left: 30px;
+		@include media (min, lg) {
+			gap: 50px;
+		}
 	}
 
 	// .nav__item
@@ -103,54 +106,3 @@
 	}
 }
 
-
-.nav {
-
-	&__item--first:before,
-	&__item--second:before,
-	&__item--third:before,
-	&__item--fourth:before {
-		content: "";
-		position: absolute;
-		top: -2px;
-		left: -19px;
-	}
-
-	&__item--first:before {
-		background-image: url(../../../img/icons/location.svg);
-		width: 14px;
-		height: 18px;
-		top: -2px;
-		left: -22px;
-	}
-
-	&__item--second:before {
-		background-image: url(../../../img/icons/letter.svg);
-		width: 19px;
-		height: 14px;
-		top: 1px;
-		left: -27px;
-	}
-
-	&__item--third:before {
-		background-image: url(../../../img/icons/watch.svg);
-		width: 16px;
-		height: 16px;
-		top: 0px;
-		left: -24px;
-	}
-
-	&__item--fourth:before {
-		background-image: url(../../../img/icons/phone.svg);
-		width: 16px;
-		height: 16px;
-		top: -1px;
-		left: -22px;
-	}
-
-	&__item--bottom:first-child:before {
-		content: "";
-		position: absolute;
-
-	}
-}
