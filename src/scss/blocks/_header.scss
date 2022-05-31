@@ -1,0 +1,23 @@
+.header {
+	margin-top: 84px;
+
+	// .header__wrapper
+	&__wrapper {
+		@include flex (space-between, center);
+		
+
+	}
+
+	// .header__logo
+	&__logo {}
+
+	// .header__inner
+	&__inner {
+		@include flex ($flex-direction: column);
+	}
+
+	// .header__nav
+	&__nav {
+		@include flex ();
+	}
+}
