@@ -560,12 +560,12 @@ body {
 
 .nav__list {
   display: flex;
-  gap: 106px;
+  gap: 50px;
   padding-left: 30px;
 }
 @media only screen and (min-width: 1023px) {
   .nav__list {
-    gap: 50px;
+    gap: 106px;
   }
 }
 .nav__item {

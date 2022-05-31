@@ -3,10 +3,10 @@
 	// .nav__list
 	&__list {
 		@include flex ();
-		gap: 106px;
+		gap: 50px;
 		padding-left: 30px;
 		@include media (min, lg) {
-			gap: 50px;
+			gap: 106px;
 		}
 	}
 
