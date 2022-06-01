@@ -1,10 +1,10 @@
 import * as flsFunctions from "./modules/functions.js";
 
 flsFunctions.isWebp();
-flsFunctions.bodyLockStatus();
 flsFunctions.bodyLockToggle();
 flsFunctions.bodyUnlock();
 flsFunctions.bodyLock();
+// flsFunctions.bodyLockStatus();
 flsFunctions.menuInit();
 flsFunctions.menuOpen();
 flsFunctions.menuClose();

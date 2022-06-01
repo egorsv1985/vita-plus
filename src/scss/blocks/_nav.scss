@@ -103,6 +103,9 @@
 	}
 	.nav__list {
 		gap: 85px;
+		@include media (min, lg) {
+			gap: 106px;
+		}
 	}
 }
 
