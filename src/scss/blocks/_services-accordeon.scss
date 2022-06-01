@@ -1,0 +1,186 @@
+.services {
+
+
+
+	// .services__accordeon
+	&__accordeon {
+
+		width: 100%;
+
+		input {
+			display: none;
+
+			&:checked {
+
+
+				~.services__item {
+
+					max-height: 1000px;
+					opacity: 1;
+					transition: all 300ms ease-in;
+					padding: 10px 20px 16px;
+					@include media (min, lg) {
+						padding: 20px 236px 16px 60px;
+					
+					}
+				}
+			}
+		}
+
+		label {
+			display: inline-block;
+			font-family: 'OnestMedium';
+
+			font-size: 14px;
+			line-height: 140%;
+
+			color: #FFFFFF;
+			width: 100%;
+			position: relative;
+
+
+			padding: 10px 0 10px 20px;
+
+			background: #53CD8B;
+			border-radius: 40px;
+
+
+			&::before {
+				content: "";
+				display: block;
+				background: url("./../img/icons/arrow.svg") 0 0 no-repeat;
+				background-size: 100%;
+				@include wh(15px, 10px);
+				@include pos (absolute, $top: 40%, $right: 18px);
+				
+
+				transform: rotate(180deg);
+				transition: transform .2s ease;
+				@include media (min, lg) {
+					
+				@include wh(25px, 20px);
+				right: 59px;
+				}
+			}
+
+			@include media (min, lg) {
+
+				font-size: 22px;
+				padding: 25px 0 25px 60px ;
+
+			}
+		}
+
+		input:checked~label::before {
+			transform: rotate(0deg);
+		}
+
+	}
+
+	// .services__item
+	&__item {
+		@include flex (space-between, center);
+
+		margin-bottom: 2px;
+		max-height: 0;
+		opacity: 0;
+		transition: font-size 300ms 300ms ease-in, opacity 300ms 0ms ease-in;
+		position: relative;
+
+		&::before {
+			@include pseudo;
+			@include wh(100%, 200%);
+			background-color: #fff;
+			@include pos (absolute, $top: 50%, $left: 50%);
+			transform: translate(-50%, -50%);
+			z-index: -1;
+			border-radius: 20px;
+
+		}
+
+	}
+
+	// .services__box
+	&__box {
+		&:first-child {
+			width: 30%;
+			@include media (min, lg) {
+				width: 53%;
+			}
+		}
+
+		@include flex ($flex-direction: column);
+		line-height: 200%;
+
+
+		color: #0F2F2E;
+
+
+
+	}
+
+	// .services__text
+	&__text {
+
+		font-size: 8px;
+		line-height: 200%;
+		text-align: left;
+
+		color: #0F2F2E;
+
+		@include media (min, lg) {
+			font-size: 16px;
+		}
+
+
+
+	}
+
+
+}
+
+
+// .FAQ {
+// 	padding: 40px 20px 450px;
+
+// 	@media all and (min-width: 930px) {
+// 		padding: 40px 50px 450px;
+// 	}
+
+// 	// .FAQ__title
+// 	&__title {
+// 		text-align: left;
+// 		margin-top: 130px;
+
+// 		@media all and (min-width: 1100px) {
+// 			margin-top: 100px;
+// 			margin-bottom: 30px;
+// 		}
+
+// 		@media all and (min-width: 630px) {
+// 			text-align: center;
+// 		}
+// 	}
+
+// 	// .FAQ__wrapper
+// 	&__wrapper {}
+
+// 	// .FAQ__block
+// 	&__block {
+// 		border-radius: 15px;
+// 		list-style-type: none;
+// 		background-color: #160239;
+// 		margin-top: 20px;
+// 		padding: 20px;
+// 		width: 100%;
+
+// 		@media all and (min-width: 1100px) {
+// 			padding: 40px 50px;
+// 			margin-bottom: 20px;
+// 		}
+
+
+
+// 	}
+
+// }
