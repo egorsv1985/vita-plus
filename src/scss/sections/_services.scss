@@ -1,12 +1,15 @@
 .services {
 	padding-top: 42px;
-@include media (min, lg) {
-	padding-top: 105px;
-}
+
+	@include media (min, lg) {
+		padding-top: 105px;
+	}
+
 	// .services__title
 	&__title {
 		text-align: left;
 		margin-bottom: 22px;
+
 		@include media (min, lg) {
 			margin-bottom: 44px;
 		}
@@ -19,31 +22,50 @@
 
 	// .services__top
 	&__top {
-		@include flex(space-between, center);
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
 		margin-bottom: 10px;
 
 		p:first-child {
-			width: 44%;
+			text-align: left;
+		}
+
+		p:nth-child(2) {
+			text-align: center;
+			margin-left: 30px;
+
 			@include media (min, lg) {
-				width: 49%;
+				margin-left: 60px;
+				text-align: right;
 			}
 		}
+
+		p:last-child {
+			text-align: right;
+
+			@include media (min, lg) {
+				text-align: center;
+				margin-left: 50px;
+			}
+		}
+
 		@include media (min, lg) {
 			margin-bottom: 20px;
-			padding: 0 115px 0 60px;
-    		}
+			padding: 0 60px;
+		}
 	}
 
 	// .services__subtitle
 	&__subtitle {}
 
-		// .services__accordeon-box
-		&__accordeon-box {
-			margin-bottom: 20px;
-			@include media (min, lg) {
-				margin-bottom: 40px;
-			}
+	// .services__accordeon-box
+	&__accordeon-box {
+		margin-bottom: 20px;
+
+		@include media (min, lg) {
+			margin-bottom: 40px;
 		}
+	}
 
 
 	// .services__btn
@@ -51,6 +73,7 @@
 
 		width: 140px;
 		margin: 0 auto;
+
 		@include media (min, lg) {
 			width: 187px;
 		}

@@ -669,23 +669,36 @@ body {
   flex-direction: column;
 }
 .services__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin-bottom: 10px;
 }
 .services__top p:first-child {
-  width: 44%;
+  text-align: left;
+}
+.services__top p:nth-child(2) {
+  text-align: center;
+  margin-left: 30px;
 }
 @media only screen and (min-width: 1023px) {
-  .services__top p:first-child {
-    width: 49%;
+  .services__top p:nth-child(2) {
+    margin-left: 60px;
+    text-align: right;
+  }
+}
+.services__top p:last-child {
+  text-align: right;
+}
+@media only screen and (min-width: 1023px) {
+  .services__top p:last-child {
+    text-align: center;
+    margin-left: 50px;
   }
 }
 @media only screen and (min-width: 1023px) {
   .services__top {
     margin-bottom: 20px;
-    padding: 0 115px 0 60px;
+    padding: 0 60px;
   }
 }
 .services__accordeon-box {
@@ -939,7 +952,7 @@ body {
 }
 @media only screen and (min-width: 1023px) {
   .services__accordeon input:checked ~ .services__item {
-    padding: 20px 236px 16px 60px;
+    padding: 20px 95px 16px 60px;
   }
 }
 .services__accordeon label {
@@ -984,9 +997,8 @@ body {
   transform: rotate(0deg);
 }
 .services__item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin-bottom: 2px;
   max-height: 0;
   opacity: 0;
@@ -1013,17 +1025,28 @@ body {
   color: #0F2F2E;
 }
 .services__box:first-child {
-  width: 30%;
+  text-align: left;
+}
+.services__box:nth-child(2) {
+  text-align: center;
 }
 @media only screen and (min-width: 1023px) {
-  .services__box:first-child {
-    width: 53%;
+  .services__box:nth-child(2) {
+    text-align: right;
+  }
+}
+.services__box:last-child {
+  text-align: right;
+}
+@media only screen and (min-width: 1023px) {
+  .services__box:last-child {
+    text-align: center;
   }
 }
 .services__text {
   font-size: 8px;
   line-height: 200%;
-  text-align: left;
+  text-align: inherit;
   color: #0F2F2E;
 }
 @media only screen and (min-width: 1023px) {
