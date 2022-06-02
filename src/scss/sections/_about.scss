@@ -1,8 +1,9 @@
 .about {
-	padding-top: 40px;
+	padding: 40px 0;
 
 	@include media (min, lg) {
 		padding-top: 100px;
+		padding-bottom: 115px;
 
 		.container {
 			padding: 0;
@@ -108,8 +109,9 @@
 			flex-direction: row;
 			max-width: 860px;
 			position: relative;
-			top: -150px;
+			top: -66px;
 			left: 315px;
+			height: 0;
 		}
 
 		// display: flex;
