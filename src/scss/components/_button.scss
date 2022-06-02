@@ -14,16 +14,17 @@
 	color: #FFFFFF;
 	border: none;
 
-@include media (min, lg) {
+	@include media (min, lg) {
 
-width: 231px;
-height: 60px;
+		width: 231px;
+		height: 60px;
 
-font-size: 16px;
-line-height: 20px;
+		font-size: 16px;
+		line-height: 20px;
 
 
-}
+	}
+
 	&:hover {
 		border: 2px solid #53CD8B;
 		color: #53CD8B;

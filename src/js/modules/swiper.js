@@ -1,21 +1,3 @@
-import * as flsFunctions from "./modules/functions.js";
-
-flsFunctions.isWebp();
-flsFunctions.bodyLockToggle();
-flsFunctions.bodyUnlock();
-flsFunctions.bodyLock();
-// flsFunctions.bodyLockStatus();
-flsFunctions.menuInit();
-flsFunctions.menuOpen();
-flsFunctions.menuClose();
-
-
-// import Swiper bundle with all modules installed
-import Swiper from 'swiper/bundle';
-
-
-
-// init Swiper:
 // init Swiper:
 const swiper = new Swiper(".doctors__swiper", {
 

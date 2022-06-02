@@ -1286,3 +1286,24 @@ body {
     font-size: 16px;
   }
 }
+
+.doctors__img {
+  width: 120px;
+}
+.doctors__subtitle {
+  font-family: "OnestMedium";
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  color: #0F2F2E;
+}
+.doctors__text {
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  color: #53CD8B;
+}
+.doctors__btn {
+  position: absolute;
+  width: 140px;
+}
