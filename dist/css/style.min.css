@@ -1432,3 +1432,160 @@ body {
     font-size: 16px;
   }
 }
+
+/* -----------------------------------------------------------------
+                       @media
+1-ый параметр $min-max принимает 3 аргумента min, max, min-max.
+   min       - для mobil @media
+   max       - для dectop @media
+   min-max   - для промежутка между mobil-dectop @media
+2-ой параметр $breakpoint_1 принимает 1-ин аргумент.
+   ключ      - хранятся в созданной карте $grid_breakpoints(xxl, xl, lg, md , sm...)
+3-ий параметр $breakpoint_2 принимает 1-ин аргумент, является не обязательным параметром.
+   ключ      - хранятся в созданной карте $grid_breakpoints(xxl, xl, lg, md , sm...) нужен для 1-ого параметра 3 аргумента.
+ Дополнение:
+   map-has-key  - Нужен для проверки ключа в карте, если ключа указанного нет то условие не выполняется.
+   map-get      - Нужен для использование ключей из карты.
+Пример:
+   @include media(max, xxl) { display: none;}
+   @include media(min, xxl) { display: none;}
+   @include media(min-max, mn-lg, mx-xxl) { display: none;}
+Одиночные брекпоинты:
+   @include media(max, 870px,) { display: none;}
+   @include media(min, 870px,) { display: none;}
+   @include media(min-max, 870px, 1000px) { display: none;}
+--------------------------------------------------------------------*/
+.footer {
+  margin-top: 100px;
+  background: #0F2F2E;
+  border-radius: 40px 40px 0 0;
+  -webkit-border-radius: 40px 40px 0 0;
+  -moz-border-radius: 40px 40px 0 0;
+  -ms-border-radius: 40px 40px 0 0;
+  -o-border-radius: 40px 40px 0 0;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 122px;
+}
+@media all and (max-width: 870px) {
+  .footer__nav {
+    flex-direction: column;
+    padding: 40px 0 0 50px;
+  }
+}
+.footer__nav__list--second, .footer__nav__list--first {
+  padding-top: 10px;
+}
+.footer__nav__list--first {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #707777;
+}
+.footer__nav__list--second {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+@media all and (max-width: 450px) {
+  .footer__nav__list--second {
+    padding: 20px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    flex-direction: row;
+    position: relative;
+    right: 49px;
+  }
+}
+.footer__nav__list--first > .footer__nav__item {
+  margin-bottom: 24px;
+}
+.footer__nav__list--second > .footer__nav__item {
+  margin-bottom: 22px;
+}
+@media all and (max-width: 450px) {
+  .footer__nav__list--second > .footer__nav__item:nth-child(odd) {
+    margin-right: 100px;
+  }
+}
+.footer__button {
+  border-color: #53CD8B;
+  color: #FFFFFF;
+  width: 231px;
+  height: 60px;
+  background: #53CD8B;
+}
+@media all and (max-width: 321px) {
+  .footer__button {
+    width: 268px;
+    height: 40px;
+  }
+}
+.footer__group-icon {
+  max-width: 122px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 100px 0 106px;
+}
+.footer__bottom__wrap {
+  max-width: 258px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media all and (max-width: 750px) {
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 50px 20px;
+  }
+}
+.footer__bottom__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #707777;
+}
+@media all and (max-width: 750px) {
+  .footer__bottom__text {
+    margin-top: 20px;
+  }
+}
+.footer__bottom__link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #53CD8B;
+  text-decoration: underline;
+}
+@media all and (max-width: 750px) {
+  .footer__bottom__link {
+    margin: 20px 0 20px;
+  }
+}
+@media all and (max-width: 870px) {
+  .footer__logo {
+    width: 100px;
+  }
+}
+@media all and (max-width: 321px) {
+  .footer__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 30px;
+  }
+}
