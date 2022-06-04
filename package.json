@@ -47,10 +47,10 @@
     "gulp-webpcss": "latest",
     "gulp-zip": "latest",
     "sass": "latest",
-    "swiper": "latest",
     "vinyl-ftp": "latest",
     "webp-converter": "2.2.3",
     "webpack": "latest",
-    "webpack-stream": "latest"
+    "webpack-stream": "latest",
+    "swiper": "^7.0.0"
   }
 }

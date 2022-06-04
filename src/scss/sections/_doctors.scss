@@ -8,6 +8,7 @@
 	// .doctors__wrapper
 	&__wrapper {
 		@include flex ($flex-direction: column);
+		
 	}
 
 	// .doctors__title
@@ -26,9 +27,20 @@
 	}
 
 	// .doctors__swiper
-	&__swiper {
+	.swiper {
 		margin-bottom: 20px;
+		max-width: 100%;
 	}
+	
+		// .doctors__buttons
+		&__buttons {
+			position: relative;
+			@include flex (space-between, center);
+			gap: 13px;
+			width: 100px;
+			right: -180px;
+		}
+
 
 	// .doctors__btn
 	&__btn {
@@ -143,7 +155,7 @@ margin-bottom: 30px;
 	@include wh(40px);
 
 	position: absolute;
-	top: 0;
+	top: 20px;
 
 
 	background-color: #53CD8B;
@@ -160,12 +172,12 @@ margin-bottom: 30px;
 }
 
 .swiper-button-next {
-	left: 240px;
+	right: 0;
 }
 
 .swiper-button-prev {
 
-	left: 190px;
+	right: 0;
 
 	&::after {
 		transform: translate(-50%, -50%) rotate(180deg);
