@@ -60,11 +60,7 @@
 
 	// .services__accordeon-box
 	&__accordeon-box {
-		margin-bottom: 20px;
-
-		@include media (min, lg) {
-			margin-bottom: 40px;
-		}
+		
 	}
 
 
@@ -73,9 +69,11 @@
 
 		width: 140px;
 		margin: 0 auto;
+		margin-top: 20px;
 
 		@include media (min, lg) {
 			width: 187px;
+			margin-top: 40px;
 		}
 
 

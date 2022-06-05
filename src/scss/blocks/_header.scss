@@ -4,7 +4,7 @@
 	width: 100%;
 	z-index: 999;
 
-	@include media (min, lg) {
+	@include media (min, xl) {
 		margin-top: 40px;
 	}
 
@@ -21,7 +21,7 @@
 		width: 100%;
 		@include flex (space-between, center);
 		padding: 0 20px;
-		@include media (min, lg) {
+		@include media (min, xl) {
 			width: 80px;
 			margin-right: 40px;
 		}
@@ -38,8 +38,9 @@
 		display: none;
 
 
-		@include media (min, lg) {
+		@include media (min, xl) {
 			@include flex ($flex-direction: column);
+			width: 1016px;
 		}
 
 	}

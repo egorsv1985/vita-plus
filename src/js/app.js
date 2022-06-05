@@ -39,6 +39,11 @@ const swiper = new Swiper(".doctorsSwiper", {
 		1024: {
 			slidesPerView: 3,
 			spaceBetween: 30
+		},
+		// when window width is >= 1280px
+		1280: {
+			slidesPerView: 4,
+			spaceBetween: 40
 		}
 	}
 });

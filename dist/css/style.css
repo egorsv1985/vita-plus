@@ -469,13 +469,11 @@ body {
   align-items: center;
   width: 240px;
   height: 40px;
-  background-color: #53CD8B;
   border-radius: 50px;
   font-family: "OnestMedium";
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
-  color: #FFFFFF;
   border: none;
 }
 @media only screen and (min-width: 1023px) {
@@ -486,10 +484,25 @@ body {
     line-height: 20px;
   }
 }
-.btn:hover {
+
+.btn-primary {
+  background-color: #53CD8B;
+  color: #FFFFFF;
+}
+.btn-primary:hover {
   border: 2px solid #53CD8B;
   color: #53CD8B;
   background-color: transparent;
+}
+
+.btn-secondary {
+  border: 2px solid #53CD8B;
+  color: #53CD8B;
+  background-color: transparent;
+}
+.btn-secondary:hover {
+  background-color: #53CD8B;
+  color: #FFFFFF;
 }
 
 .burger {
@@ -504,7 +517,7 @@ body {
   background-color: #53CD8B;
   border-radius: 50%;
 }
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1279px) {
   .burger {
     display: none;
   }
@@ -547,6 +560,9 @@ body {
   bottom: calc(50% - 1px);
 }
 
+.hero {
+  position: relative;
+}
 @media only screen and (min-width: 1440px) {
   .hero {
     min-width: 100%;
@@ -556,7 +572,7 @@ body {
   padding: 0 10px;
   margin-top: 10px;
 }
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1279px) {
   .hero .container {
     max-width: 1400px;
     padding: 0 20px;
@@ -570,11 +586,11 @@ body {
   border-radius: 30px;
   padding: 40px 0 30px;
 }
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1279px) {
   .hero__wrapper {
     flex-direction: row;
     gap: 26px;
-    padding: 115px 0 10px 100px;
+    padding: 115px 0 96px 100px;
   }
 }
 .hero__content {
@@ -582,8 +598,21 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 225px;
 }
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 575px) {
+  .hero__content {
+    max-width: 50%;
+    padding-top: 30px;
+  }
+}
+@media only screen and (min-width: 575px) {
+  .hero__content {
+    max-width: 50%;
+    padding-top: 90px;
+  }
+}
+@media only screen and (min-width: 1279px) {
   .hero__content {
     display: flex;
     justify-content: flex-start;
@@ -594,7 +623,7 @@ body {
 .hero__title {
   margin-bottom: 20px;
 }
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1279px) {
   .hero__title {
     max-width: 500px;
     margin-bottom: 40px;
@@ -604,7 +633,7 @@ body {
 .hero__text {
   margin-bottom: 20px;
 }
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1279px) {
   .hero__text {
     max-width: 500px;
     text-align: left;
@@ -621,24 +650,63 @@ body {
   flex-direction: column;
   gap: 10px;
 }
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1279px) {
   .hero__buttons {
     flex-direction: row;
     gap: 20px;
   }
 }
 .hero__block-img {
-  position: relative;
-  margin: 0 auto 24px;
-  left: 16px;
+  position: absolute;
+  right: 0;
+  top: 42px;
 }
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 575px) {
   .hero__block-img {
-    margin: 0;
-    left: -1%;
+    right: 10px;
+    top: 75px;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .hero__block-img {
+    right: 90px;
   }
 }
 @media only screen and (min-width: 1023px) {
+  .hero__block-img {
+    right: 175px;
+    top: 110px;
+  }
+}
+@media only screen and (min-width: 1279px) {
+  .hero__block-img {
+    right: 35%;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .hero__block-img {
+    position: relative;
+    right: unset;
+    top: unset;
+  }
+}
+@media only screen and (min-width: 575px) {
+  .hero__img {
+    height: 100%;
+    width: 103%;
+  }
+}
+@media only screen and (min-width: 767px) {
+  .hero__img {
+    width: 130%;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  .hero__img {
+    width: 160%;
+  }
+}
+@media only screen and (min-width: 1279px) {
   .hero__img {
     height: 100%;
     width: 280%;
@@ -701,21 +769,15 @@ body {
     padding: 0 60px;
   }
 }
-.services__accordeon-box {
-  margin-bottom: 20px;
-}
-@media only screen and (min-width: 1023px) {
-  .services__accordeon-box {
-    margin-bottom: 40px;
-  }
-}
 .services__btn {
   width: 140px;
   margin: 0 auto;
+  margin-top: 20px;
 }
 @media only screen and (min-width: 1023px) {
   .services__btn {
     width: 187px;
+    margin-top: 40px;
   }
 }
 
@@ -1113,7 +1175,7 @@ body {
   width: 100%;
   z-index: 999;
 }
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1279px) {
   .header {
     margin-top: 40px;
   }
@@ -1130,7 +1192,7 @@ body {
   align-items: center;
   padding: 0 20px;
 }
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1279px) {
   .header__block {
     width: 80px;
     margin-right: 40px;
@@ -1139,10 +1201,11 @@ body {
 .header__inner {
   display: none;
 }
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1279px) {
   .header__inner {
     display: flex;
     flex-direction: column;
+    width: 1016px;
   }
 }
 .header__nav {
@@ -1155,7 +1218,7 @@ body {
   gap: 50px;
   padding-left: 30px;
 }
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1279px) {
   .nav__list {
     gap: 106px;
     flex-direction: row;
@@ -1215,7 +1278,7 @@ body {
 .nav--bottom .nav__list {
   gap: 85px;
 }
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1279px) {
   .nav--bottom .nav__list {
     gap: 106px;
   }
@@ -1245,7 +1308,7 @@ body {
 .open .header__block {
   margin-bottom: 36px;
 }
-@media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1279px) {
   .open .header__logo {
     margin-right: 40px;
   }
