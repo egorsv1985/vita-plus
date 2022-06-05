@@ -8,7 +8,7 @@
 	// .doctors__wrapper
 	&__wrapper {
 		@include flex ($flex-direction: column);
-		
+
 	}
 
 	// .doctors__title
@@ -31,20 +31,29 @@
 		margin-bottom: 20px;
 		max-width: 100%;
 	}
-	
-		// .doctors__buttons
-		&__buttons {
-			position: relative;
-			@include flex (space-between, center);
-			gap: 13px;
-			width: 100px;
-			right: -180px;
+
+	// .doctors__buttons
+	&__buttons {
+		position: relative;
+		@include flex (space-between, center);
+		gap: 13px;
+		width: 100px;
+		right: -180px;
+
+		@include media (min, lg) {
+
+			gap: 20px;
+			width: 150px;
+			right: -87%;
+			top: -514px;
 		}
+	}
 
 
 	// .doctors__btn
 	&__btn {
 		width: 140px;
+
 		@include media (min, lg) {
 			width: 220px;
 			margin: 0 auto;
@@ -52,156 +61,3 @@
 	}
 }
 
-.container {}
-
-.title {}
-
-.swiper-button-next {}
-
-.swiper-button-prev {}
-
-.swiper {
-
-	// .swiper__wrapper
-	&__wrapper {}
-
-	// .swiper__slide
-	&__slide {
-
-		width: 205px;
-		padding: 30px 20px;
-
-		background: #FFFFFF;
-		border-radius: 30px;
-
-		@include media (min, lg) {
-
-			width: 260px;
-
-			border-radius: 40px;
-			padding: 50px 20px;
-
-		}
-
-	}
-
-	// .swiper__box-img
-	&__box-img {
-		width: 120px;
-		margin: 0 auto 20px;
-	}
-
-	// .swiper__img
-	&__img {
-		width: 100%;
-	}
-
-	// .swiper__box
-	&__box {}
-
-	// .swiper__subtitle
-	&__subtitle {
-		font-family: 'OnestMedium';
-
-		font-size: 12px;
-		line-height: 150%;
-		text-align: center;
-
-		color: #0F2F2E;
-		margin-bottom: 10px;
-		@include media (min, lg) {
-			
-font-size: 16px;
-margin-bottom: 20px;
-		}
-
-
-	}
-
-	// .swiper__text
-	&__text {
-		color: #53CD8B;
-		margin-bottom: 20px;
-		@include media (min, lg) {
-		
-font-size: 14px;
-margin-bottom: 30px;
-
-		}
-	}
-
-	// .swiper__btn
-	&__btn {
-		width: 140px;
-		margin: 0 auto;
-		@include media (min, lg) {
-			width: 180px;
-			height: 40px;
-		}
-	}
-}
-
-.subtitle {}
-
-.text {}
-
-.btn {}
-
-
-
-
-.swiper-button-next,
-.swiper-button-prev {
-	@include wh(40px);
-
-	position: absolute;
-	top: 20px;
-
-
-	background-color: #53CD8B;
-	border-radius: 50%;
-
-	&::after {
-		@include pseudo;
-		@include wh(16px);
-		@include background (url(../img/icons/arrow-slider.svg));
-		@include pos (absolute, $top:50%, $left:50%);
-		transform: translate(-50%, -50%);
-	}
-
-}
-
-.swiper-button-next {
-	right: 0;
-}
-
-.swiper-button-prev {
-
-	right: 0;
-
-	&::after {
-		transform: translate(-50%, -50%) rotate(180deg);
-	}
-}
-
-.swiper-button-disabled {
-	background-color: #fff;
-
-
-
-	&::after {
-		@include background (url(../img/icons/arrow-slider-dis.svg));
-	}
-}
-
-.swiper-button-prev.swiper-button-disabled {
-	&::after {
-		transform: translate(-50%, -50%) rotate(0deg);
-	}
-}
-
-.swiper-button-next.swiper-button-disabled {
-	&::after {
-		transform: translate(-50%, -50%) rotate(180deg);
-	}
-}

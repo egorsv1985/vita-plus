@@ -10,8 +10,6 @@
 @import "./fonts";
 
 
-
-@import "./base/sections";
 @import "./base/tipography";
 @import "./base/global";
 
@@ -19,6 +17,8 @@
 
 @import "./components/button";
 @import "./components/burger";
+@import "./components/social";
+@import "./components/swiper";
 
 
 // sections
@@ -36,5 +36,4 @@
 @import "./blocks/logo";
 @import "./blocks/open-burger";
 @import "./blocks/services-accordeon";
-@import "./blocks/doctors-slide";
 @import "./blocks/footer";

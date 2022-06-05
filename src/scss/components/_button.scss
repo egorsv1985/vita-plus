@@ -56,3 +56,22 @@
 
 	}
 }
+.consultations__btn-primary{
+	border: 2px solid #0F2F2E;
+	color: #0F2F2E;
+	&:hover {
+		color: $accentColor;
+		background-color: #0F2F2E;
+		border: none;
+	}
+
+}
+.consultations__btn-secondary{
+	color: $accentColor;
+	background-color: #0F2F2E;
+	border: none;
+	&:hover{
+		border: 2px solid #0F2F2E;
+	color: #0F2F2E;
+	}
+}

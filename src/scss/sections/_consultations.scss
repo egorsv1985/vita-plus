@@ -74,19 +74,6 @@
 		}
 	}
 
-	// .consultations__btn
-	&__btn {
-		border: 2px solid #0F2F2E;
-		color: #0F2F2E;
-
-		&:hover {
-			color: $accentColor;
-			background-color: #0F2F2E;
-			border: none;
-		}
-
-
-	}
 
 	// .consultations__img
 	&__img {
@@ -105,6 +92,7 @@
 		@include media (min, md) {
 			left: 35%;
 		}
+
 		@include media (min, lg) {
 			max-width: 487px;
 			height: 617px;
@@ -113,97 +101,3 @@
 		}
 	}
 }
-
-
-
-
-// .consultations {
-// 	&__wrap--color{
-// 	  background: $accentColor;
-// 	  border-radius: 40px;
-// 	  @media all and (max-width: 1016px) {
-// 		max-width: 800px;
-// 		width: 100%;
-// 		margin: 0 auto;
-// 		}
-// 	}
-// 	&__wrapper{
-// 	   max-width: 600px;
-// 	   width: 100%;
-// 	}
-// 	&__title--color {
-// 	  color: #0F2F2E;
-// 	}
-// 	&__title,
-// 	&__text {
-// 	  color: #FFFFFF;
-
-// 	}
-// 	&__text{
-// 	  margin: 40px 0 60px;
-// 	  max-width: 462px;
-// 	  width: 100%;
-// 	  text-align: justify;
-// 	  @media all and (max-width: 1016px) {
-// 		text-align: center;
-// 		max-width: 100%;
-// 		margin: 0;
-// 		margin-bottom: 50px;
-// 		}
-// 		@media all and (max-width: 450px) {
-// 		  margin-bottom: 20px;
-// 		  }
-// 	}
-// 	&__button {
-// 	  border-color: #0F2F2E;
-// 	  color: #0F2F2E;
-// 	  width: 231px;
-// 	  height: 60px;
-// 	}
-// 	&__button:hover {
-// 	  color: $accentColor;
-// 	  background-color: #0F2F2E;
-// 	  border: none;
-// 	}
-// 	&__img {
-// 	  max-width: 471px;
-// 	  width: 100%;
-// 	  position: absolute;
-// 	  top: -53px;
-// 	  right: 20px;
-// 	  @media all and (max-width: 1016px) {
-// 		position: relative;
-// 		top: 0;
-// 	  right: 0;
-// 		}
-// 	}
-// 	&__content {
-// 	  display: flex;
-// 	  padding: 55px 0 76px 60px;
-// 	  position: relative;
-// 	  @media all and (max-width: 1016px) {
-// 		flex-direction: column;
-// 		align-items: center;
-// 		padding: 30px 30px 0 30px;
-// 		}
-// 	}
-// 	&__title {
-// 	  @media all and (max-width: 1016px) {
-// 		text-align: center;
-// 		margin-bottom: 50px;
-// 		}
-// 		@media all and (max-width: 420px) {
-// 		  text-align: center;
-// 		  margin-bottom: 20px;
-// 		  }
-// 	}
-// 	&__buttons{
-// 	  display: flex;
-// 	  justify-content: space-between;
-// 	  max-width: 482px;
-// 	  width: 100%;
-// 	  @media all and (max-width: 1016px) {
-// 		justify-content: space-around;
-// 		max-width: 100%;
-// 	}}
-//   }

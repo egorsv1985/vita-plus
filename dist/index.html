@@ -8,8 +8,8 @@
 <!-- <link rel="shortcut icon" href="img/favicons/favicon.svg" type="image/svg+xml">
 <link rel="shortcut icon" href="img/favicons/favicon.webp" type="image/webp">
 <link rel="shortcut icon" href="img/favicons/favicon.png" type="image/x-icon"> -->
-<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220605185315"/>
+<link rel="stylesheet" href="css/style.min.css?_v=20220605185315">
 <title>Главная</title>
 </head>
 <body>
@@ -73,7 +73,7 @@
 </div>
 </div>
 <div class="hero__block-img">
-<img src="img/hero-img.png" alt="hero" class="hero__img">
+<picture><source srcset="img/hero-img.webp" type="image/webp"><img src="img/hero-img.png" alt="hero" class="hero__img"></picture>
 </div>
 </div>
 </div>
@@ -219,7 +219,216 @@
 <a class="services__btn btn btn-secondary" href="#" role="button">Все услуги</a>
 </div>
 </section>
+<section class="about">
+<div class="container">
+<div class="about__wrapper">
+<div class="about__content">
+<picture><source srcset="img/doctor-about.webp" type="image/webp"><img class="about__img" src="img/doctor-about.png" alt="doctor"></picture>
+<span class="about__subtitle subtitle">О нас</span>
+<h2 class="about__title title">Стоматологический центр Vita+ <span class="title--color">на 32% доступнее </span>других стоматологий Красноярска</h2>
+<p class="about__text text">В клиниках «Vita+» используется система работы «в четыре руки», т.е. один врач плюс один ассистент около кресла с пациентом. Использование ассистента в данном случае не только способствует увеличению производительности труда врача, но и существенно повышает качество	проводимого лечения.</p>
+<a class="about__btn btn btn-primary" href="#" role="button">Подробнее</a>
 </div>
-<script src="js/app.min.js"></script>
+<div class="about__wrap">
+<div class="about__box">
+<h3 class="about__achievement title title--color">20+</h3>
+<p class="about__achievement-text text">Лет на рынке</p>
+</div>
+<div class="about__box">
+<h2 class="about__achievement title title--color">1500+</h2>
+<p class="about__achievement-text text">Здоровых пациентов</p>
+</div>
+<div class="about__box">
+<h2 class="about__achievement title title--color">23</h2>
+<p class="about__achievement-text text">Врача-профессионала</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="consultations">
+<div class="container">
+<div class="consultations__content consultations__content--color">
+<h2 class="consultations__title title">Консультация, снимок и план лечения <span class="title--color">бесплатно</span></h2>
+<p class="consultations__text text">Укажите свой номер телефона, мы перезвоним и подберём для вас удобное время приёма. Или позвоните нам сами — <a href="tel:+74999555067" class="consultations__link">+7 499955-50-67</a></p>
+<div class="consultations__buttons">
+<a class="consultations__btn btn consultations__btn-primary btn-primary" href="#" role="button">Телефон</a>
+<a class="consultations__btn btn consultations__btn-secondary btn-secondary" href="#" role="button">Оставить заявку</a>
+</div>
+<picture><source srcset="img/consultations.webp" type="image/webp"><img class="consultations__img" src="img/consultations.png" alt=""></picture>
+</div>
+</div>
+</section>
+<section class="doctors">
+<div class="container">
+<div class="doctors__wrapper">
+<h2 class="doctors__title title">Наши врачи</h2>
+<!-- Slider main container -->
+<div class="swiper doctorsSwiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="swiper__item">
+<div class="swiper__box-img">
+<picture><source srcset="img/doctor.webp" type="image/webp"><img class="swiper__img" src="img/doctor.png" alt="doctor"></picture>
+</div>
+<div class="swiper__box">
+<h3 class="swiper__subtitle subtitle">Константинопольский Константин Владимирович</h3>
+<p class="swiper__text text">врач-стоматолог, хирург</p>
+<button class="swiper__btn btn btn-primary">Подробнее</button>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="swiper__item">
+<div class="swiper__box-img">
+<picture><source srcset="img/doctor.webp" type="image/webp"><img class="swiper__img" src="img/doctor.png" alt="doctor"></picture>
+</div>
+<div class="swiper__box">
+<h3 class="swiper__subtitle subtitle">Константинопольский Константин Владимирович</h3>
+<p class="swiper__text text">врач-стоматолог, хирург</p>
+<button class="swiper__btn btn btn-primary">Подробнее</button>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="swiper__item">
+<div class="swiper__box-img">
+<picture><source srcset="img/doctor.webp" type="image/webp"><img class="swiper__img" src="img/doctor.png" alt="doctor"></picture>
+</div>
+<div class="swiper__box">
+<h3 class="swiper__subtitle subtitle">Константинопольский Константин Владимирович</h3>
+<p class="swiper__text text">врач-стоматолог, хирург</p>
+<button class="swiper__btn btn btn-primary">Подробнее</button>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="swiper__item">
+<div class="swiper__box-img">
+<picture><source srcset="img/doctor.webp" type="image/webp"><img class="swiper__img" src="img/doctor.png" alt="doctor"></picture>
+</div>
+<div class="swiper__box">
+<h3 class="swiper__subtitle subtitle">Константинопольский Константин Владимирович</h3>
+<p class="swiper__text text">врач-стоматолог, хирург</p>
+<button class="swiper__btn btn btn-primary">Подробнее</button>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="swiper__item">
+<div class="swiper__box-img">
+<picture><source srcset="img/doctor.webp" type="image/webp"><img class="swiper__img" src="img/doctor.png" alt="doctor"></picture>
+</div>
+<div class="swiper__box">
+<h3 class="swiper__subtitle subtitle">Константинопольский Константин Владимирович</h3>
+<p class="swiper__text text">врач-стоматолог, хирург</p>
+<button class="swiper__btn btn btn-primary">Подробнее</button>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="swiper__item">
+<div class="swiper__box-img">
+<picture><source srcset="img/doctor.webp" type="image/webp"><img class="swiper__img" src="img/doctor.png" alt="doctor"></picture>
+</div>
+<div class="swiper__box">
+<h3 class="swiper__subtitle subtitle">Константинопольский Константин Владимирович</h3>
+<p class="swiper__text text">врач-стоматолог, хирург</p>
+<button class="swiper__btn btn btn-primary">Подробнее</button>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="swiper__item">
+<div class="swiper__box-img">
+<picture><source srcset="img/doctor.webp" type="image/webp"><img class="swiper__img" src="img/doctor.png" alt="doctor"></picture>
+</div>
+<div class="swiper__box">
+<h3 class="swiper__subtitle subtitle">Константинопольский Константин Владимирович</h3>
+<p class="swiper__text text">врач-стоматолог, хирург</p>
+<button class="swiper__btn btn btn-primary">Подробнее</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="doctors__buttons">
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+</div>
+<a class="doctors__btn btn btn-secondary" href="#" role="button">Показать всех</a>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="footer__wrapper">
+<a href="#" class="footer__logo logo">
+<img src="img/logo.svg" alt="logo" class="logo__img">
+</a>
+<nav class="footer__nav nav">
+<ul class="nav__list">
+<li class="nav__item nav__item--map">
+<a href="https://goo.gl/maps/GgVJZ6m5fuVRE7P77" class="nav__link">г. Красноярск, ул.Академика Киренского 25а</a>
+</li>
+<li class="nav__item nav__item--work">Пн-пт 10:00-18:00</li>
+<li class="nav__item nav__item--mail">
+<a href="mailto:info@vitaplus.ru" class="nav__link">info@vitaplus.ru</a>
+</li>
+<li class="nav__item nav__item--tel">
+<a href="tel:+79999999999" class="nav__link">+7 (999) 999-99-99</a>
+</li>
+</ul>
+</nav>
+<nav class="footer__nav nav nav--services">
+<ul class="nav__list nav__list-grid">
+<li class="nav__item">
+<a href="#" class="nav__link">Услуги</a>
+</li>				
+<li class="nav__item">
+<a href="#" class="nav__link">Отзывы</a>
+</li>
+<li class="nav__item">
+<a href="#" class="nav__link">Врачи</a>
+</li>
+<li class="nav__item">
+<a href="#" class="nav__link">Контакты</a>
+</li>
+</ul>
+</nav>
+<div class="footer__inner">
+<a href="#" class="footer__btn btn btn-primary">Оставить заявку</a>
+<ul class="footer__social social">
+<li class="social__item">
+<a href="#" class="social__link">
+<img src="img/VK-icon.svg" alt="vk" class="social__img">
+</a>
+</li>
+<li class="social__item">
+<a href="#" class="social__link">
+<img src="img/inst-icon.svg" alt="instagram" class="social__img">
+</a>
+</li>
+<li class="social__item">
+<a href="#" class="social__link">
+<img src="img/facebook-icon.svg" alt="facebook" class="social__img">
+</a>
+</li>
+</ul>
+</div>
+<div class="footer__bottom">
+<div class="footer__wrap">
+<span class="footer__text text">Vita+ 2022</span>
+<span class="footer__text text">Все права защищены.</span>
+</div>
+<a class="footer__link" href="#">Политика конфиденциальности</a>
+<div class="footer__box">
+<p class="footer__text text">Разработка сайта:</p>
+<p class="footer__text text">Realines</p>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script src="js/app.min.js?_v=20220605185315"></script>
 </body>
 </html>
