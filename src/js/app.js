@@ -1,11 +1,11 @@
+/* Importing all the functions from the file functions.js. */
 import * as flsFunctions from "./modules/functions.js";
-// import Swiper from 'swiper';
+
 
 flsFunctions.isWebp();
 flsFunctions.bodyLockToggle();
 flsFunctions.bodyUnlock();
 flsFunctions.bodyLock();
-// flsFunctions.bodyLockStatus();
 flsFunctions.menuInit();
 flsFunctions.menuOpen();
 flsFunctions.menuClose();
@@ -18,13 +18,14 @@ import Swiper, {
 } from 'swiper';
 
 // init Swiper:
+
 const swiper = new Swiper(".doctorsSwiper", {
 	modules: [Navigation, Pagination],
 	navigation: {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
 	},
-	// Default parameters
+
 	slidesPerView: 1.35,
 	spaceBetween: 10,
 	// Responsive breakpoints
@@ -36,7 +37,7 @@ const swiper = new Swiper(".doctorsSwiper", {
 		},
 
 		// when window width is >= 1024px
-		1024: {
+		768: {
 			slidesPerView: 3,
 			spaceBetween: 30
 		},
