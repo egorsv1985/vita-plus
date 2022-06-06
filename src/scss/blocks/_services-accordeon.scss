@@ -1,7 +1,5 @@
 .services {
 
-
-
 	// .services__accordeon
 	&__accordeon {
 
@@ -101,6 +99,12 @@
 
 		}
 
+		&:last-child {
+			&::before {
+				height: 100%;
+			}
+		}
+
 	}
 
 	// .services__box
@@ -120,10 +124,10 @@
 
 		&:nth-child(2) {
 			text-align: center;
-			
+
 
 			@include media (min, lg) {
-				
+
 				text-align: right;
 			}
 		}
@@ -133,7 +137,7 @@
 
 			@include media (min, lg) {
 				text-align: center;
-				
+
 			}
 		}
 
@@ -158,4 +162,3 @@
 
 
 }
-

@@ -1,15 +1,18 @@
 .hero {
+	position: relative;
+
 	// min-width: 1400px;
-	@include media (min,1440px) {
+	@include media (min, 1440px) {
 		min-width: 100%;
-		
+
 
 	}
+
 	.container {
 		padding: 0 10px;
 		margin-top: 10px;
 
-		@include media (min, lg) {
+		@include media (min, xl) {
 			max-width: 1400px;
 			padding: 0 20px;
 			margin-top: 40px;
@@ -25,10 +28,10 @@
 		border-radius: 30px;
 		padding: 40px 0 30px;
 
-		@include media (min, lg) {
+		@include media (min, xl) {
 			flex-direction: row;
 			gap: 26px;
-			padding: 115px 0 10px 100px;
+			padding: 115px 0 96px 100px;
 
 		}
 	}
@@ -38,8 +41,22 @@
 	// .hero__content
 	&__content {
 		@include flex (center, center, $flex-direction: column);
+		padding-top: 225px;
 
-		@include media (min, lg) {
+		@include media (min, sm) {
+			max-width: 50%;
+
+			padding-top: 30px;
+		}
+
+		@include media (min, sm) {
+			max-width: 50%;
+
+			padding-top: 90px;
+		}
+
+
+		@include media (min, xl) {
 			@include flex(flex-start, flex-start);
 
 			padding-top: 110px;
@@ -51,7 +68,7 @@
 	&__title {
 		margin-bottom: 20px;
 
-		@include media (min, lg) {
+		@include media (min, xl) {
 			max-width: 500px;
 			margin-bottom: 40px;
 			text-align: left;
@@ -62,7 +79,7 @@
 	&__text {
 		margin-bottom: 20px;
 
-		@include media (min, lg) {
+		@include media (min, xl) {
 			max-width: 500px;
 			text-align: left;
 			margin-bottom: 80px;
@@ -78,30 +95,67 @@
 		@include flex (center, center, $flex-direction: column);
 		gap: 10px;
 
-		@include media (min, lg) {
+		@include media (min, xl) {
 			flex-direction: row;
 			gap: 20px;
 		}
 	}
 
-	// .hero__btn
-	&__btn {}
-
 	// .hero__block-img
 	&__block-img {
-		position: relative;
-		margin: 0 auto 24px;
-		left: 16px;
+		position: absolute;
+		right: 0;
+		top: 42px;
+
+		@include media (min, sm) {
+			right: 10px;
+			top: 75px;
+		}
+
+		@include media (min, md) {
+			right: 90px;
+
+		}
 
 		@include media (min, lg) {
-			margin: 0;
-			left: -1%;
+
+			right: 175px;
+			top: 110px;
+		}
+
+
+		@include media (min, xl) {
+			right: 35%;
+		}
+
+		@include media (min, 1500px) {
+			position: relative;
+			right: unset;
+			top: unset;
+
 		}
 	}
 
 	// .hero__img
 	&__img {
+		@include media (min, sm) {
+
+			height: 100%;
+			width: 103%;
+
+		}
+
+		@include media (min, md) {
+			width: 130%;
+
+		}
+
 		@include media (min, lg) {
+
+			width: 160%;
+		}
+
+		@include media (min, xl) {
 
 			height: 100%;
 			width: 280%;

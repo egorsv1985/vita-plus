@@ -12,7 +12,7 @@
 	background-color: #53CD8B;
 	border-radius: 50%;
 
-	@include media (min, lg) {
+	@include media (min, xl) {
 		display: none;
 	}
 

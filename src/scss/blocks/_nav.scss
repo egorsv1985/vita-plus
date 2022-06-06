@@ -2,11 +2,12 @@
 
 	// .nav__list
 	&__list {
-		@include flex ();
+		@include flex ($flex-direction: column);
 		gap: 50px;
 		padding-left: 30px;
-		@include media (min, lg) {
+		@include media (min, xl) {
 			gap: 106px;
+			flex-direction: row;
 		}
 	}
 
@@ -103,7 +104,7 @@
 	}
 	.nav__list {
 		gap: 85px;
-		@include media (min, lg) {
+		@include media (min, xl) {
 			gap: 106px;
 		}
 	}
